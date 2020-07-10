@@ -7,9 +7,11 @@ test('App Component renders without crashing', () => {
   render(<App />)
 })
 
-test('fetching data text appears when no data is loaded yet', () => {
+test('fetching data text shows when no data is loaded yet', () => {
   const { getByText } = render(
     <App />
   )
   getByText(/fetching data/i)
 }) 
+
+// i meaning not case sensitive
